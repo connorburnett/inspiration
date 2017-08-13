@@ -1,0 +1,84 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Inspire</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins|Raleway" rel="stylesheet">
+</head>
+
+
+
+<body id="body">
+
+	<div id="image">
+
+	</div>
+
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-xs-2">
+				<div class="bckrnd">
+					<div id="todo">
+
+						<form onsubmit="app.controllers.todoController.addTodo(event)">
+
+							<h4>Things To Do:</h4>
+							<input type="text" class="form-control pull-right" name="thing" id="newTodo" placeholder="What's on the docket today?">
+							<button type="submit" class="btn btn-default addbtn"><p>Add</p></button>
+
+						</form>
+					</div>
+
+					<div id="todo-list">
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-xs-8">
+				<div class="items">
+					<div id="weather">
+						Your Weather Template
+					</div>
+
+					<div id="clock">
+						Clock
+					</div>
+
+					<div id="quote">
+						The Quote
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-2"></div>
+
+		</div>
+	</div>
+
+	<!--JS Libraries-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<!--Services-->
+	<script src="app/components/weather/weather-service.js"></script>
+	<script src="app/components/image/image-service.js"></script>
+	<script src="app/components/quote/quote-service.js"></script>
+	<script src="app/components/todo/todo-service.js"></script>
+	<script src="app/components/clock/clock-service.js"></script>
+
+	<!--Controllers-->
+	<script src="app/components/weather/weather-controller.js"></script>
+	<script src="app/components/image/image-controller.js"></script>
+	<script src="app/components/quote/quote-controller.js"></script>
+	<script src="app/components/todo/todo-controller.js"></script>
+	<script src="app/components/clock/clock-controller.js"></script>
+
+	<!--Initialize App-->
+	<script src="app/init.js"></script>
+</body>
+
+</html>
