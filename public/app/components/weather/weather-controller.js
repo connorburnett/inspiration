@@ -13,8 +13,9 @@ function WeatherController(){
 			<div id="temp">${temp} °F</div>
 			<div id="location">${boise}, Idaho, U.S.A.</div>
 		`
+		//Idaho will not be applicable if using out of state, so change later
 		document.getElementById('weather').innerHTML = template
-		//What can you do with this weather object?
+
 	})
 
 }

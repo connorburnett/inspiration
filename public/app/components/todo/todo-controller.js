@@ -9,6 +9,7 @@ function TodoController() {
 	var todoService = new TodoService()
 
 	// Use this getTodos function as your callback for all other edits
+
 	function getTodos(){
 		//FYI DONT EDIT ME
 		todoService.getTodos(draw)
@@ -23,7 +24,7 @@ function TodoController() {
 			var todo = todos[i]
 			template += `
 			<div class="thumbnail">
-				<p>${todo.thing}</p><button type="button" class="btn btn-default delbtn" onclick="app.controllers.todoController.removeTodo('${todo._id}')">Click When Done!</button>
+				<p>${todo.thing}</p><button type="button" class="btn btn-default delbtn" onclick="app.controllers.todoController.removeTodo('${todo._id}')">X</button>
 				<!--<input type="checkbox" name="check" onclick="app.controllers.todoController.toggleTodoStatus('${todo._id}')"></input>-->
 			</div>
 			`
@@ -61,5 +62,5 @@ function TodoController() {
 	}
 
 	// IF YOU WANT YOUR TODO LIST TO DRAW WHEN THE PAGE FIRST LOADS WHAT SHOULD YOU CALL HERE???
-	//getTodos()
+	getTodos()
 }
