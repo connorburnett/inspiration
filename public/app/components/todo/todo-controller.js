@@ -25,7 +25,7 @@ function TodoController() {
 			template += `
 			<div class="thumbnail">
 				<p>${todo.thing}</p><button type="button" class="btn btn-default delbtn" onclick="app.controllers.todoController.removeTodo('${todo._id}')">X</button>
-				<!--<input type="checkbox" name="check" onclick="app.controllers.todoController.toggleTodoStatus('${todo._id}')"></input>-->
+				<input type="checkbox" name="check" onclick="app.controllers.todoController.toggleTodoStatus('${todo._id}')"></input>
 			</div>
 			`
 		}

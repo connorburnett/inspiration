@@ -107,7 +107,18 @@ h5 {
     font-family: 'Raleway', sans-serif;
 }
 
-.qut {
+#authr {
+    display: none;
+    opacity: 0;
+    animation: fade 6s;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+#qut {
     font-style: italic;
 }
 

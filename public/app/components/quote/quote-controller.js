@@ -9,10 +9,16 @@ function QuoteController() {
 		var auth = quote.author
 
 		var template = `
-			<div class="qut">"${qotd}"</div>
-			<div class="authr">~${auth}</div>
+			<div id="qut">"${qotd}"</div>
+			<div id="authr">~${auth}</div>
 		`
 
 		document.getElementById('quote').innerHTML = template
+
+		$("#qut").hover(function () {
+			$("#authr").css("display", "block");
+		}, function () {
+			$("#authr").css("display", "none");
+		});
 	})
 }

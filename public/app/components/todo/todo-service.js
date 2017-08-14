@@ -30,10 +30,10 @@ function TodoService() {
 		console.log(todoId)
 		for (var i = 0; i < todoId.length; i++) {
 			if (todo.check) {
-				todo.check == !todo.check
+				todo.check == true
 			} else
 			if (!todo.check) {
-				 todo.check == !todo.check
+				 !todo.check == false
 			}
 		}
 		//STEP 1: Find the todo by its id **HINT** todoList

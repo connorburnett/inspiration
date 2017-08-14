@@ -22,3 +22,5 @@ server.listen(port, () => {
     Hit CTRL-C to stop the server`)
 
 })
+
+var dbConnect = require("./config/db/mlab-config")
