@@ -17,22 +17,3 @@ function ClockController() {
     }
     startTime()
 }
-
-/*function ClockController() {
-
-    var cs = this
-    var clockService = new ClockService()
-
-    clockService.getTime(function(clock) {
-
-        var day = clock.dayOfTheWeek
-        var time = clock.currentDateTime
-
-        var template = `
-            <div>${day}, ${time}</div>
-        `
-
-        document.getElementById('clock').innerHTML = template
-    })
-}*/
-
