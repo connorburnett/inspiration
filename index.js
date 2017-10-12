@@ -3,7 +3,7 @@ var bodyParser = require('body-parser')
 var dbConnect = require('./config/db/mlab-config')
 
 var server = express()
-var port = env.port
+var port = process.env.PORT || 3000
 
 server.use(express.static(__dirname + '/public'))
 server.use(bodyParser.json())
