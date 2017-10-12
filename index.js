@@ -5,9 +5,9 @@ var dbConnect = require('./config/db/mlab-config')
 var server = express()
 var port = env.port
 
-server.use(express.static('/public'))
+server.use(express.static(__dirname + '/public'))
 server.use(bodyParser.json())
-server.use(bodyParser.urlencoded({extended:true})) 
+server.use(bodyParser.urlencoded({extended:true}))
 
 var todosRouter = require('./routes/todos')
 
